@@ -315,7 +315,7 @@ nav ul li a:hover {
    margin: 0;
    padding: 1em;
    position: relative;
-   color: grey;
+   color: black;
    font-weight: 900;
 }
  .quote blockquote:before {
