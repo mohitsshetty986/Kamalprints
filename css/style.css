@@ -244,6 +244,7 @@ nav ul li a:hover {
 
  cite {
    font-weight: 700;
+   text-shadow: 1px 1px grey;
    color: #ffac47;
    font-family: 'Voces', 'Open Sans', arial, sans-serif;
  }
@@ -257,7 +258,16 @@ nav ul li a:hover {
 }
  .col {
    flex: 1;
+
 }
+
+.col-text:hover{
+    transition: 0.5s;
+    background: #cccccc;
+    box-shadow: 0 0 10px grey;
+    transform: translateX(10px);
+}
+
  .col-text {
    flex: 1.5;
 }
@@ -304,7 +314,7 @@ nav ul li a:hover {
 }
 @media (min-width: 640px) {
    .r {
-          flex-basis: 60%;
+     flex-basis: 60%;
      height: auto;
   }
 }
