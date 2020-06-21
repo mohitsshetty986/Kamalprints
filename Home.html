@@ -6,6 +6,7 @@
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css">
 	<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 </head>
@@ -39,8 +40,24 @@
 	</div>
 
 
-	<a class="gotopbtn" href="#"> <i class="fas fa-arrow-up"></i> </a>
+	<button id="topBtn"><i class="fas fa-arrow-up"></i></button>
 
+	<script>
+		$(document).ready(function(){
+
+		$(window).scroll(function(){
+			if($(this).scrollTop()>40){
+				$('#topBtn').fadeIn();	
+			} else{
+				$('#topBtn').fadeOut();
+			}
+		});
+
+		$("#topBtn").click(function(){
+			$('html, body').animate({scrollTop : 0},800);
+			});
+		});
+	</script>
 	
 
 	<div class="content-title" id="aboutus">
@@ -232,7 +249,7 @@
 	</section>
 
 	<div class="footer">
-		&copy; Copyright 2020 Kamal Prints
+		&copy;<foot> Copyright 2020 Kamal Prints</foot><img src="images/logo2.png" height="19px">
 	</div>
 	
 </body>
