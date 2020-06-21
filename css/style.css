@@ -310,6 +310,7 @@ nav ul li a:hover {
 }
 
 
+
 /*------------------About US--------------------*/
 .banner-parallax {
       background-image: url("https://tctranscontinental.com/sites/default/files/inline-images/220_print_0.jpg");
@@ -377,17 +378,18 @@ nav ul li a:hover {
 @media screen and (min-width: 47.5em ) {
   .leftColumn { margin-right: 19.5em; }
 
-  .rightColumn { position: absolute; top: 0; right: 0; width: 18.75em; }   
+  .rightColumn { position: absolute; top: 0; right: 0; width: 18.75em; }
+  
 }
+
+.rightColumn:hover .overlay {
+  opacity: 1;
+}  
 
 .image {
   display: block;
   width: 100%;
   height: auto;
-}
-
-.rightColumn:hover .overlay {
-  opacity: 1;
 }
 
 .text {
@@ -403,7 +405,6 @@ nav ul li a:hover {
 }
 .overlay {
   position: absolute;
-  top: 0;
   bottom: 0;
   left: 0;
   right: 0;
@@ -412,6 +413,12 @@ nav ul li a:hover {
   opacity: 0;
   transition: .5s ease;
   background-color: #fff6de;
+}
+
+@media screen and (max-width: 760px) {
+  .overlay{
+   height: 56%; 
+  }
 }
 
 .fa {
