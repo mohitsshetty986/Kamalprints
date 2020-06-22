@@ -19,6 +19,7 @@ h1{
       font-style: italic;
       font-weight: 700;
       text-shadow: 8px 8px 8px grey;
+      text-align: center;
 }
 
 
@@ -71,6 +72,17 @@ nav ul li a:hover {
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1), inset 0 0 1px rgba(255, 255, 255, 0.6);
   background: rgba(255, 255, 255, 0.1);
   color: rgba(0, 0, 0, 0.7);
+}
+
+
+@media screen and (max-width: 560px) {
+  nav ul li  {
+    width: 100%;
+  }
+
+  .slideText h1{
+    display: none;
+  }
 }
 
 
@@ -533,3 +545,4 @@ foot:hover {
   50%  { opacity: 1;  }
   100% { transform:translate(0,10px) rotate(45deg); opacity: 0; }
 }
+
