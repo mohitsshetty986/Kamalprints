@@ -382,55 +382,37 @@ nav ul li a:hover {
 
 /*----------Contact us-----*/
 
-
-.columnsContainer{ position: relative; margin: .5em; }
-
-
-/* MEDIA QUERIES */
-@media screen and (min-width: 47.5em ) {
-  .leftColumn { margin-right: 19.5em; }
-
-  .rightColumn { position: absolute; top: 0; right: 0; width: 18.75em; }
-  
+.avatar {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
 }
 
-.rightColumn:hover .overlay {
-  opacity: 1;
-}  
+.column {
+  float: left;
+  width: 70%;
+  padding: 10px;
+  background: #fff6de;
+}
 
-.image {
-  display: block;
+.column1 {
+  float: left;
+  width: 30%;
+  padding: 10px;
+  color: #363232;
+  background: #fff6de;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+@media screen and (max-width: 560px) {
+.column,.column1{
   width: 100%;
-  height: auto;
 }
-
-.text {
-  color: grey;
-  font-size: 20px;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
-  text-align: center;
-}
-.overlay {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  height: 100%;
-  width: 100%;
-  opacity: 0;
-  transition: .5s ease;
-  background-color: #fff6de;
-}
-
-@media screen and (max-width: 760px) {
-  .overlay{
-   height: 56%; 
-  }
 }
 
 .fa {
@@ -548,3 +530,5 @@ foot:hover {
 .scroll-down{
 	display: none;
 	}
+
+
